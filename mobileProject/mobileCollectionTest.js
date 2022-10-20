@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mobileCollection_1 = require("./mobileCollection");
+var mobile_1 = require("./mobile");
+var m1 = new mobile_1.Mobile("El ladrillo", "Nokia", "3310", "Negro", 300);
+var m2 = new mobile_1.Mobile("Asereje", "Ja", "De je", "Dejede tu dejede", 300);
+var m3 = new mobile_1.Mobile("El boom", "Samsung", "Galaxy S6", "Explosivo", 900);
+var m4 = new mobile_1.Mobile("Iphone X", "Iphone", "X", "Azul", 1000);
+var mArr = [m1, m2, m3, m4];
+var myCollection = new mobileCollection_1.MobileCollection(mArr);
+console.log(myCollection.getMobiles());
+console.log(myCollection.getTotalPrice());
+myCollection.setMobiles(mArr);
