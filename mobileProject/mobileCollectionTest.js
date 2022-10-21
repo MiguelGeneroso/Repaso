@@ -11,3 +11,4 @@ var myCollection = new mobileCollection_1.MobileCollection(mArr);
 console.log(myCollection.getMobiles());
 console.log(myCollection.getTotalPrice());
 myCollection.setMobiles(mArr);
+myCollection.printCollection();

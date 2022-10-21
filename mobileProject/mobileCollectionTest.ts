@@ -14,3 +14,5 @@ console.log(myCollection.getTotalPrice());
 
 myCollection.setMobiles(mArr);
 
+myCollection.printCollection();
+
