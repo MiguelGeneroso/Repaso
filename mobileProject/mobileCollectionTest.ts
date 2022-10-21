@@ -10,6 +10,5 @@ let mArr : Mobile[] = [m1,m2,m3,m4];
 let myCollection : MobileCollection = new MobileCollection(mArr);
 
 console.log(myCollection.getMobiles());
-console.log(myCollection.getTotalPrice());
 myCollection.setMobiles(mArr);
 
