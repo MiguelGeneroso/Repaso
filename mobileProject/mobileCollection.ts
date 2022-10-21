@@ -8,7 +8,6 @@ export class MobileCollection{
     constructor(private mobiles : Mobile[]){
 
         this.mobiles = mobiles;
-        this.totalPrice = 0;
     }
 
     public setMobiles(arr : Mobile[]) : void{
@@ -22,5 +21,11 @@ export class MobileCollection{
     public getMobiles() : Mobile[]{
 
         return this.mobiles;
+    }
+
+    public getTotalPrice() : number {
+
+        
+        return this.totalPrice;
     }
 }
