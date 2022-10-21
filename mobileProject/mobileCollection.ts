@@ -38,7 +38,5 @@ export class MobileCollection{
         }
 
         return sumaTotal;
-
-
     }
 }
