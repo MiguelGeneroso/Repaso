@@ -25,4 +25,24 @@ export class Point{
     public toString() : string{
         return "(" + this.x + "," + this.y + ")";
     }
+
+    public distanceTolOrigin() : number{
+        let distancia : number = 0;
+        let OrigenX : number = 0;
+        let OrigenY : number = 0;
+
+        distancia = Math.sqrt(Math.pow(this.x - OrigenX, 2)) + Math.sqrt(Math.pow(this.y - OrigenY, 2));
+
+        return distancia;
+    }
+
+    public calculateDistance(p2 : Point) : number{
+
+        let distancia : number = 0;
+
+        distancia = Math.sqrt(Math.pow(this.x - p2.x, 2)) + Math.sqrt(Math.pow(this.y - p2.y, 2));
+
+        return distancia;
+
+    }
 }

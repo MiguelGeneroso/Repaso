@@ -2,8 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var points_1 = require("./points");
 var p = new points_1.Point();
-p.setX(17);
-p.setY(5);
+var p2 = new points_1.Point(2, 3);
+p.setX(3);
+p.setY(3);
 console.log("Valor eje x: " + p.getX());
 console.log("Valor eje y: " + p.getY());
 console.log(p.toString());
+console.log("La distancia es : " + p.distanceTolOrigin());
+console.log("La distancia entre (" + p.getX() + "," + p.getY() + ") y (" + p2.getX() + "," + p2.getY() + ") es: " + p.calculateDistance(p2));
