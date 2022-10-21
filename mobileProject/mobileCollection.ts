@@ -23,12 +23,4 @@ export class MobileCollection{
 
         return this.mobiles;
     }
-
-    public getTotalPrice() : number {
-
-        for (let i = 0; i < this.mobiles.length; i++){
-            this.totalPrice += this.mobiles[i].getPrice();
-        }
-        return this.totalPrice;
-    }
 }
