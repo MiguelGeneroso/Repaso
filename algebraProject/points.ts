@@ -45,4 +45,45 @@ export class Point{
         return distancia;
 
     }
+
+    public calcularQuadrant():number{
+
+        let posicion : number = 0;
+
+        if (this.x == 0 && this.y == 0){
+
+            posicion = 0;
+        }else if (this.x >= 0 && this.y >= 0){
+
+            posicion = 1;
+        }else if (this.x < 0 && this.y >= 0){
+
+            posicion = 2;
+        }else if (this.x < 0 && this.y < 0){
+
+            posicion = 3;
+        }else{
+
+            posicion = 4;
+        }
+
+        return posicion;
+    }
+
+    public calculateNearest(points : Point[]) : Point{
+
+        let p1 : Point = points[0];
+        
+        for (let i = 0; i < points.length; i++){
+
+            if (this.calculateDistance(points[i]) < this.calculateDistance(p1)){
+                
+                p1 = points[i];
+            }
+            
+            
+        }
+
+        return p1;
+    }
 }
