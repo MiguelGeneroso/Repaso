@@ -3,6 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Point = void 0;
 var Point = /** @class */ (function () {
     function Point(x, y) {
+        if (x === void 0) { x = 0; }
+        if (y === void 0) { y = 0; }
         this.x = x;
         this.y = y;
     }
@@ -53,7 +55,7 @@ var Point = /** @class */ (function () {
         return posicion;
     };
     Point.prototype.calculateNearest = function (points) {
-        var p1 = new Point(0, 0);
+        var p1 = points[0];
         for (var i = 0; i < points.length; i++) {
             if (this.calculateDistance(points[i]) < this.calculateDistance(p1)) {
                 p1 = points[i];
